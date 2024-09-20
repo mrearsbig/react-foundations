@@ -15,14 +15,15 @@
         <script type="text/jsx">
             const domNode = document.getElementById('app');
 
-            function Header() {
+            function Header(props) {
+                console.log(props); // { title: "React" }
                 return <h1>Develop. Preview. Ship.</h1>;
             }
 
             function HomePage() {
                 return (
                     <div>
-                        <Header />
+                        <Header title="React" />
                     </div>
                 );
             }
