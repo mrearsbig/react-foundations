@@ -15,8 +15,8 @@
         <script type="text/jsx">
             const domNode = document.getElementById('app');
 
-            function Header(props) {
-                console.log(props); // { title: "React" }
+            function Header({ title }) {
+                console.log(title); // "React"
                 return <h1>Develop. Preview. Ship.</h1>;
             }
 
